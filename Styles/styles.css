@@ -1,1 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Roboto:300');
+
+/*footer*/
+footer {
+    background: linear-gradient(to bottom right, #FE6B82, 55%, #9225F0);   
+}
