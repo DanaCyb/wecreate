@@ -231,7 +231,31 @@ header .wawe-top, .wawe-top2 {
     margin-bottom: 250px;
     transform: rotateZ(180deg);
 }
-
+/*experience*/
+#experience {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 50px 200px 100px;
+    grid-template-areas:". Slogan5 Img3 ."
+        ". Text3 Img3 ."
+        ". Find4 Img3 .";
+    grid-column-gap: 20px;
+    justify-items:center;
+    align-items: center;
+    padding-top: 20px;
+}
+#experience h2 {
+    grid-area: Slogan5;
+}
+#experience p {
+    grid-area: Text3;
+}
+#experience button {
+    grid-area: Find4;
+}
+#experience img {
+    grid-area: Img3;
+}
 /*footer*/
 footer {
     display: grid;
