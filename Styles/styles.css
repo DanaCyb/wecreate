@@ -1,13 +1,93 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Roboto:300');
 
+/*header*/
+header {
+    background: linear-gradient(to top right, #FE6B82, 55%, #9225F0);
+    height: 445px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 30px 1fr 100px;
+    grid-template-areas: "Nav Nav"
+                        "Slogan1 Slogan1"
+                        " . Images";
+    grid-row-gap: 20px;
+}
+nav {
+    grid-area: Nav;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    padding-top: 30px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-top: 10px;
+    height: 50px;
+}
+nav ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    line-height: 10px;  
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+header h1, h3 {
+    grid-area: Slogan1;
+    font-family: 'Montserrat', sans-serif;  
+    text-transform: capitalize;
+    text-transform: lowercase;
+    color: white;
+}
+header h1 {
+    font-size: 116px;
+    align-self: start;
+    justify-self: center;
+}
+header h3 {
+    font-size: 21px;
+    align-self: end;
+    justify-self: center;
+}
+header .wawe-top, .wawe-top2 {
+    grid-area: Images;
+    height: 50px;
+    justify-items: end;
+   
+}
+.wawe-top {
+    align-self: end;
+    justify-self: end;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 420px;
+
+}
+.wawe-top2 {
+    align-self: start;
+    justify-self: end;
+    width: 240px;   
+}
+
 /*footer*/
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background: linear-gradient(to bottom right, #FE6B82, 55%, #9225F0);  
+    background: linear-gradient(to bottom right, #FE6B82, 55%, #9225F0); 
+    background-size: auto;
     grid-template-areas:"slogan form"
-                        "create form"
+                        "create form";
+    grid-column-gap: 220px;
+    
 }
 .slogan {
     grid-area: slogan;
@@ -26,18 +106,17 @@ footer {
     text-transform: uppercase;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
-    color:  #9225F0;
+    color: #9225F0;
 }
 .form {
     grid-area: form;
-    justify-self: start;
-    align-self: flex-start;
-    margin: 20px 0 25px 50px;
-    padding-bottom: 25px;
+    justify-self: stretch;
+    align-self: stretch;
+    margin: 20px 20px 20px 0;   
 }
 .button {
     grid-area: form;
-    align-self: flex-end;
+    align-self: flex-start;
     width: 150px;
     height: 35px;
     background: none;
@@ -45,11 +124,9 @@ footer {
     color: white;
     font-family: 'Montserrat', sans-serif;
     border: 1px solid white;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 120px;
+    display: block;
 }
-
 .form label {
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
@@ -64,12 +141,9 @@ footer {
 .form input {
     border: none;
     border-bottom: 2px solid #9225F0; 
-    max-width: 30vw;
 }
 .form textarea {
     border: 2px solid #9225F0;
     padding: 5px 0 5px 0;
-    height: 150px;
-    max-width: 30vw;
     margin-top: 10px;
 }
