@@ -61,21 +61,83 @@ header .wawe-top, .wawe-top2 {
     grid-area: Images;
     height: 50px;
     justify-items: end;
-   
 }
 .wawe-top {
     align-self: end;
     justify-self: end;
     padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 50px;
     width: 420px;
-
 }
 .wawe-top2 {
     align-self: start;
     justify-self: end;
     width: 240px;   
+    margin-bottom: 50px;
 }
+
+/*projects*/
+#projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 200px 100px;
+    grid-template-areas:"Slogan2 Img1"
+                        "Text2 Img1"
+                        "Find Img1";
+    justify-items:center;
+    align-items: center;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+#projects h2 {
+    grid-area: Slogan2;
+    align-self: center;
+    justify-self: start;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: #9225F0;
+    font-size: 27px;
+    font-family: 'Montserrat', sans-serif;  
+    text-transform: capitalize;
+    text-transform: lowercase;    
+}
+#projects p {
+    grid-area: Text2;
+    align-self: flex-start;
+    justify-self: start;
+    color: black;
+    align-self: center;
+    justify-self: start;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #9225F0;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+#projects button {
+    grid-area: Find;
+    margin-left: 50px;
+    align-self: center;
+    justify-self: start;
+    height: 50px;
+    width: 200px;
+    color: black;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background: none;
+    border: 2px solid #9225F0;
+}
+.img1 {
+    grid-area: Img1;
+    width: 409px;
+    margin-top: 50px;
+    justify-self: start;
+}
+
 
 /*footer*/
 footer {
