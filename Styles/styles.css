@@ -79,27 +79,28 @@ header .wawe-top, .wawe-top2 {
 /*projects*/
 #projects {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 10% 40% 40% 10%;
     grid-template-rows: 50px 200px 100px;
-    grid-template-areas:"Slogan2 Img1"
-                        "Text2 Img1"
-                        "Find Img1";
+    grid-template-areas:". Slogan2 Img1 ."
+                        ". Text2 Img1 ."
+                        ". Find Img1 .";
+    grid-column-gap: 20px;
     justify-items:center;
     align-items: center;
-    margin-left: 100px;
     padding-top: 20px;
 }
 #projects h2 {
     grid-area: Slogan2;
     align-self: center;
-    justify-self: start;
-    margin-left: 50px;
+    justify-self: stretch;
     margin-top: 50px;
     color: #9225F0;
     font-size: 27px;
     font-family: 'Montserrat', sans-serif;  
     text-transform: capitalize;
-    text-transform: lowercase;    
+    text-transform: lowercase;  
+    letter-spacing: 6px;
+    font-weight: bold;
 }
 #projects p {
     grid-area: Text2;
@@ -107,9 +108,7 @@ header .wawe-top, .wawe-top2 {
     justify-self: start;
     color: black;
     align-self: center;
-    justify-self: start;
-    margin-left: 50px;
-    margin-right: 50px;
+    justify-self: start;   
     color: #9225F0;
     font-size: 12px;
     line-height: 20px;
@@ -118,8 +117,7 @@ header .wawe-top, .wawe-top2 {
 }
 #projects button {
     grid-area: Find;
-    margin-left: 50px;
-    align-self: center;
+    align-self: end;
     justify-self: start;
     height: 50px;
     width: 200px;
@@ -131,13 +129,72 @@ header .wawe-top, .wawe-top2 {
     background: none;
     border: 2px solid #9225F0;
 }
-.img1 {
+#projects img {
     grid-area: Img1;
-    width: 409px;
-    margin-top: 50px;
-    justify-self: start;
+    margin-top: 30px;
+    justify-self: center;
+    align-self: center;
 }
-
+/*companyCulture*/
+#companysCulture {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 50px 200px 100px;
+    grid-template-areas:". Img2 Slogan3 ."
+                        ". Img2 Text3 ."
+                        ". Img2 Find3 .";
+    grid-column-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#companysCulture h2 {
+    grid-area: Slogan3;
+    align-self: center;
+    justify-self: stretch;
+    margin-top: 50px;
+    color: #9225F0;
+    font-size: 27px;
+    font-family: 'Montserrat', sans-serif;  
+    text-transform: capitalize;
+    text-transform: lowercase;   
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+#companysCulture p {
+    grid-area: Text3;
+    align-self: flex-start;
+    justify-self: start;
+    color: black;
+    align-self: center;
+    justify-self: start;   
+    color: #9225F0;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+#companysCulture button {
+    grid-area: Find3;
+    align-self: end;
+    justify-self: start;
+    height: 50px;
+    width: 200px;
+    color: black;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background: none;
+    border: 2px solid #9225F0;
+}
+#companysCulture img {
+    grid-area: Img2;
+    height: 350px;
+    justify-self: start;
+    align-self: center;
+}
 
 /*footer*/
 footer {
