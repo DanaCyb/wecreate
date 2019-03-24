@@ -246,15 +246,49 @@ header .wawe-top, .wawe-top2 {
 }
 #experience h2 {
     grid-area: Slogan5;
+    align-self: center;
+    justify-self: stretch;
+    margin-top: 50px;
+    color: #9225F0;
+    font-size: 27px;
+    font-family: 'Montserrat', sans-serif;  
+    text-transform: capitalize;
+    text-transform: lowercase;  
+    letter-spacing: 6px;
+    font-weight: bold;
 }
 #experience p {
     grid-area: Text3;
+    align-self: flex-start;
+    justify-self: start;
+    color: black;
+    align-self: center;
+    justify-self: start;   
+    color: #9225F0;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 #experience button {
     grid-area: Find4;
+    align-self: end;
+    justify-self: start;
+    height: 50px;
+    width: 200px;
+    color: black;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background: none;
+    border: 2px solid #9225F0;
 }
 #experience img {
     grid-area: Img3;
+    margin-top: 30px;
+    justify-self: center;
+    align-self: center;
 }
 /*footer*/
 footer {
