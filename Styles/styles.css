@@ -116,6 +116,16 @@ header .wawe-top, .wawe-top2 {
     font-weight: bold;
     max-width: 406px;
 }
+
+#projects p::before{
+    content: " 1. ";
+    font-size: 247px;
+    opacity:0.22;
+    display: block;
+    z-index: -1;
+    font-family: 'Montserrat', sans-serif;   
+}
+
 #projects button {
     grid-area: Find;
     align-self: end;
@@ -177,6 +187,15 @@ header .wawe-top, .wawe-top2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     max-width: 406px;
+}
+#companysCulture p::before{
+    content: " 2. ";
+    color:#FE6B82;
+    font-size: 247px;
+    opacity:0.22;
+    display: block;
+    z-index: -1;
+    font-family: 'Montserrat', sans-serif;
 }
 #companysCulture button {
     grid-area: Find3;
@@ -240,9 +259,9 @@ header .wawe-top, .wawe-top2 {
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;
     grid-template-rows: 50px 200px 100px;
-    grid-template-areas:". Slogan5 Img3 ."
-        ". Text3 Img3 ."
-        ". Find4 Img3 .";
+    grid-template-areas:"cyf Slogan5 Img3 ."
+                        "cyf Text3 Img3 ."
+                        "cyf Find4 Img3 .";
     grid-column-gap: 50px;
     justify-items:center;
     align-items: center;
@@ -275,6 +294,16 @@ header .wawe-top, .wawe-top2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     max-width: 406px;
+}
+#experience p::before{
+    grid-area: cyf;
+    content: " 3. ";
+    color:#9225F0;
+    font-size: 247px;
+    opacity:0.32;
+    display: block;
+    z-index: -1;
+    font-family: 'Montserrat', sans-serif;
 }
 #experience button {
     grid-area: Find4;
