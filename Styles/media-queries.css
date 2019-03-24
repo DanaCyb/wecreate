@@ -1,0 +1,13 @@
+@media (max-width: 60.000em){
+    #projects, #companyCulture, #experience, footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 200px 100px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    
+}
